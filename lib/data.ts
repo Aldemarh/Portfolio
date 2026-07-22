@@ -210,6 +210,18 @@ export const experience: Experience[] = [
     ],
   },
   {
+    role: "Soporte de Plataformas",
+    company: "Freelance",
+    period: "2025 — 2026",
+    description:
+      "Soporte técnico y funcional a plataformas web, atendiendo a usuarios y garantizando el correcto funcionamiento del producto.",
+    achievements: [
+      "Resolución y seguimiento de tickets de soporte.",
+      "Solución de novedades e incidencias reportadas por los usuarios.",
+      "Coordinación con el equipo de desarrollo para aplicar correcciones.",
+    ],
+  },
+  {
     role: "Reconocedor Predial Integral",
     company: "Data Tools S.A.S",
     period: "Oct 2024 — Nov 2024",
