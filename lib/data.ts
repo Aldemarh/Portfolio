@@ -8,7 +8,7 @@ export const site = {
   name: "Aldemar Hernández",
   role: "Ingeniero de Sistemas · Desarrollador Web · UX/UI & QA",
   tagline:
-    "Ingeniero de Sistemas enfocado en diseño de experiencia de usuario (UX/UI) y aseguramiento de la calidad de software. Transformo requerimientos en interfaces claras, intuitivas y productos confiables.",
+    "Ingeniero de Sistemas y Desarrollador Web. Diseño experiencias (UX/UI), aseguro la calidad (QA) y doy soporte a plataformas resolviendo incidencias, con una comunicación cercana y clara con los clientes.",
   location: "Colombia",
   email: "aldemarh645@gmail.com",
   phone: "+57 314 727 9982",
