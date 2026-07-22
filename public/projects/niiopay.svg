@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" fill="none">
+  <defs>
+    <linearGradient id="bgnp" x1="0" y1="0" x2="1200" y2="675" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#111c33"/>
+    </linearGradient>
+    <radialGradient id="glownp" cx="900" cy="250" r="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3bb4e5" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#3bb4e5" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="tilenp" x1="780" y1="130" x2="1020" y2="370" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5cc7ef"/>
+      <stop offset="1" stop-color="#29a3e0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bgnp)"/>
+  <g stroke="#1e2b45" stroke-width="1">
+    <path d="M0 168h1200M0 337h1200M0 506h1200M300 0v675M600 0v675M900 0v675"/>
+  </g>
+  <rect width="1200" height="675" fill="url(#glownp)"/>
+  <!-- Tile del logo niio -->
+  <rect x="770" y="130" width="260" height="260" rx="60" fill="url(#tilenp)"/>
+  <text x="900" y="305" text-anchor="middle" fill="#ffffff"
+        font-family="'Arial Rounded MT Bold','Segoe UI',Arial,sans-serif"
+        font-size="120" font-weight="800" letter-spacing="-4">niio</text>
+  <!-- Titulo -->
+  <text x="80" y="560" fill="#e2e8f0" font-family="Segoe UI, Arial, sans-serif" font-size="46" font-weight="700">NiioPay</text>
+  <text x="80" y="602" fill="#8fc7e6" font-family="Segoe UI, Arial, sans-serif" font-size="26">App iOS · Fintech · Pagos &amp; Billetera digital</text>
+</svg>

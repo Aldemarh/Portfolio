@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" fill="none">
+  <defs>
+    <linearGradient id="bgqa" x1="0" y1="0" x2="1200" y2="675" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#111c33"/>
+    </linearGradient>
+    <linearGradient id="accqa" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#60a5fa"/>
+      <stop offset="1" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bgqa)"/>
+  <g stroke="#1e2b45" stroke-width="1">
+    <path d="M0 168h1200M0 337h1200M0 506h1200M300 0v675M600 0v675M900 0v675"/>
+  </g>
+  <circle cx="960" cy="150" r="200" fill="#3b82f6" opacity="0.12"/>
+  <!-- Shield con check -->
+  <path d="M900 150 l120 42 v120 c0 96 -66 150 -120 176 c-54 -26 -120 -80 -120 -176 v-120 z" fill="#0f1a2e" stroke="#2a3a5c" stroke-width="3"/>
+  <path d="M846 312 l38 40 l70 -86" stroke="url(#accqa)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Checklist -->
+  <g>
+    <rect x="360" y="196" width="46" height="46" rx="10" fill="url(#accqa)"/>
+    <path d="M372 219 l9 9 l14 -17" stroke="#0b1220" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <rect x="426" y="208" width="230" height="22" rx="8" fill="#2a3a5c"/>
+    <rect x="360" y="278" width="46" height="46" rx="10" fill="url(#accqa)"/>
+    <path d="M372 301 l9 9 l14 -17" stroke="#0b1220" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <rect x="426" y="290" width="270" height="22" rx="8" fill="#2a3a5c"/>
+    <rect x="360" y="360" width="46" height="46" rx="10" fill="#16233d" stroke="#2a3a5c" stroke-width="2"/>
+    <rect x="426" y="372" width="200" height="22" rx="8" fill="#22304d"/>
+  </g>
+  <text x="80" y="560" fill="#e2e8f0" font-family="Segoe UI, Arial, sans-serif" font-size="46" font-weight="700">Quality Assurance</text>
+  <text x="80" y="602" fill="#7c93b8" font-family="Segoe UI, Arial, sans-serif" font-size="26">Testing · Control de calidad · Requerimientos</text>
+</svg>
