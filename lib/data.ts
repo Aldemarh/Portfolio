@@ -72,7 +72,7 @@ export const skills: SkillGroup[] = [
 ];
 
 export type Service = {
-  icon: "landing" | "portfolio" | "web" | "qa";
+  icon: "landing" | "portfolio" | "web" | "qa" | "support";
   title: string;
   description: string;
   features: string[];
@@ -109,6 +109,17 @@ export const services: Service[] = [
       "Pruebas funcionales y de usabilidad",
       "Reporte y seguimiento de bugs",
       "Verificación de correcciones",
+    ],
+  },
+  {
+    icon: "support",
+    title: "Soporte de Plataformas",
+    description:
+      "Soporte técnico y funcional para tu web o app: atiendo tickets, resuelvo incidencias y mantengo tu plataforma funcionando sin contratiempos.",
+    features: [
+      "Atención de tickets",
+      "Solución de incidencias",
+      "Acompañamiento continuo",
     ],
   },
 ];

@@ -1,13 +1,16 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import {
   LayoutTemplate,
   Briefcase,
   Globe,
   ShieldCheck,
+  LifeBuoy,
   Check,
   ArrowRight,
+  ChevronDown,
 } from "lucide-react";
 import { Section } from "./Section";
 import { services } from "@/lib/data";
@@ -17,9 +20,15 @@ const icons = {
   portfolio: Briefcase,
   web: Globe,
   qa: ShieldCheck,
+  support: LifeBuoy,
 };
 
+const INITIAL_COUNT = 4;
+
 export function Services() {
+  const [showAll, setShowAll] = useState(false);
+  const visible = showAll ? services : services.slice(0, INITIAL_COUNT);
+
   return (
     <Section
       id="servicios"
@@ -32,7 +41,7 @@ export function Services() {
       </p>
 
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        {services.map((service, i) => {
+        {visible.map((service, i) => {
           const Icon = icons[service.icon];
           return (
             <motion.div
@@ -64,6 +73,22 @@ export function Services() {
           );
         })}
       </div>
+
+      {services.length > INITIAL_COUNT && (
+        <div className="mt-8 flex justify-center">
+          <button
+            type="button"
+            onClick={() => setShowAll((v) => !v)}
+            className="inline-flex items-center gap-2 rounded-lg border border-slate-300 px-5 py-3 text-sm font-semibold transition-colors hover:bg-slate-100 dark:border-slate-700 dark:hover:bg-slate-800"
+          >
+            {showAll ? "Ver menos" : `Ver más (${services.length - INITIAL_COUNT})`}
+            <ChevronDown
+              size={16}
+              className={`transition-transform ${showAll ? "rotate-180" : ""}`}
+            />
+          </button>
+        </div>
+      )}
 
       <div className="mt-10 flex justify-center">
         <a
