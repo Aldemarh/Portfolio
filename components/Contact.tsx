@@ -195,6 +195,20 @@ export function Contact() {
             </div>
 
             <div className="mt-5">
+              <label htmlFor="phone" className="mb-1.5 block text-sm font-medium">
+                Teléfono / WhatsApp
+              </label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                required
+                placeholder="+57 300 000 0000"
+                className="w-full rounded-lg border border-slate-300 bg-transparent px-3.5 py-2.5 text-sm outline-none transition-all placeholder:text-slate-400 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/30 dark:border-slate-700"
+              />
+            </div>
+
+            <div className="mt-5">
               <label htmlFor="message" className="mb-1.5 block text-sm font-medium">
                 Mensaje
               </label>
