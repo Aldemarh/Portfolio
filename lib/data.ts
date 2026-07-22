@@ -66,6 +66,17 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
+    category: "Soporte & Atención al Cliente",
+    items: [
+      "Soporte técnico y funcional",
+      "Atención y gestión de tickets",
+      "Comunicación con clientes",
+      "Resolución de incidencias",
+      "Levantamiento de requerimientos",
+      "Trabajo en equipo",
+    ],
+  },
+  {
     category: "SIG & Redes",
     items: ["QGIS", "ArcGIS", "Administración de redes"],
   },
