@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 460" fill="none">
+  <rect x="0" y="0" width="680" height="460" fill="#ffffff"/>
+  <rect x="10" y="10" width="660" height="440" rx="4" fill="none" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Logo UCC -->
+  <g transform="translate(45 40)">
+    <circle cx="18" cy="18" r="18" fill="#0d9488"/>
+    <path d="M6 18 a12 12 0 1 0 24 0" fill="none" stroke="#ffffff" stroke-width="3.5"/>
+    <path d="M30 8 a14 14 0 0 1 4 12" fill="none" stroke="#7cb342" stroke-width="4" stroke-linecap="round"/>
+    <text x="46" y="14" fill="#374151" font-family="Segoe UI, Arial, sans-serif" font-size="11" letter-spacing="2">UNIVERSIDAD</text>
+    <text x="46" y="30" fill="#0d9488" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="800" letter-spacing="1">COOPERATIVA</text>
+    <text x="46" y="42" fill="#9ca3af" font-family="Segoe UI, Arial, sans-serif" font-size="8" letter-spacing="2">DE COLOMBIA</text>
+  </g>
+
+  <!-- Contenido centrado -->
+  <text x="340" y="140" text-anchor="middle" fill="#6b7280" font-family="Georgia, serif" font-size="14">La Universidad Cooperativa de Colombia certifica que</text>
+  <text x="340" y="182" text-anchor="middle" fill="#111827" font-family="Georgia, serif" font-size="24" font-weight="700">Aldemar José Hernández Hernández</text>
+  <text x="340" y="212" text-anchor="middle" fill="#9ca3af" font-family="Georgia, serif" font-size="12">cumplió los requisitos y se le expide el certificado de</text>
+
+  <text x="340" y="258" text-anchor="middle" fill="#0d5b57" font-family="Georgia, serif" font-size="21" font-weight="700">SEMINARIO TALLER EN ADMINISTRACIÓN,</text>
+  <text x="340" y="286" text-anchor="middle" fill="#0d5b57" font-family="Georgia, serif" font-size="21" font-weight="700">SEGURIDAD Y GESTIÓN DE REDES</text>
+
+  <text x="340" y="326" text-anchor="middle" fill="#6b7280" font-family="Georgia, serif" font-size="13">Montería · 16 sep – 16 oct de 2022 · Duración: 96 horas</text>
+
+  <!-- Firma -->
+  <line x1="240" y1="392" x2="440" y2="392" stroke="#d1d5db" stroke-width="1"/>
+  <text x="340" y="410" text-anchor="middle" fill="#4b5563" font-family="Georgia, serif" font-size="12" font-weight="600">Jorge Wilson Vélez Osorio</text>
+  <text x="340" y="426" text-anchor="middle" fill="#9ca3af" font-family="Georgia, serif" font-size="11">Director Campus</text>
+
+  <text x="340" y="446" text-anchor="middle" fill="#b8b58f" font-family="Georgia, serif" font-size="9" letter-spacing="1">VIGILADA MINEDUCACIÓN</text>
+</svg>

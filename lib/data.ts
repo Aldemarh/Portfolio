@@ -285,27 +285,46 @@ export type Education = {
   title: string;
   institution: string;
   date: string;
+  image?: string; // miniatura opcional (en /public)
+  href?: string; // enlace de verificación opcional
 };
 
 export const education: Education[] = [
   {
     title: "Ingeniería de Sistemas",
     institution: "Universidad Cooperativa de Colombia",
-    date: "Diciembre 2023",
+    date: "Septiembre 2023",
+    image: "/diploma-sistemas.svg",
+  },
+  {
+    title: "Matrícula Profesional · 081122-0793653 COR",
+    institution: "COPNIA — Ingeniería de Sistemas",
+    date: "Septiembre 2025",
+    image: "/tarjeta-profesional.svg",
+    href: "https://tramites.copnia.gov.co/Copnia_Microsite/CertificateOfGoodStanding/WaterMarkmethod?CertificateNumber=081122-0793653%20COR",
+  },
+  {
+    title: "Reconocedor Predial Integral",
+    institution: "Politécnico Formar Innovar",
+    date: "Octubre 2023",
+    image: "/cert-predial.svg",
   },
   {
     title: "Curso de Diseño UX/UI",
     institution: "Udemy",
     date: "Julio 2024",
+    image: "/cert-uxui.svg",
   },
   {
-    title: "Diplomado en Administración, Seguridad y Gestión de Redes",
-    institution: "Certificación profesional",
-    date: "Septiembre 2022",
+    title: "Seminario Taller en Administración, Seguridad y Gestión de Redes",
+    institution: "Universidad Cooperativa de Colombia · 96 horas",
+    date: "Octubre 2022",
+    image: "/cert-redes.svg",
   },
   {
     title: "Bachiller Académico",
     institution: "Escuela Normal Superior de Montería",
     date: "Diciembre 2017",
+    image: "/diploma-bachiller.svg",
   },
 ];

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 460" fill="none">
+  <defs>
+    <clipPath id="cpux"><rect x="0" y="0" width="680" height="460" rx="6"/></clipPath>
+  </defs>
+  <g clip-path="url(#cpux)">
+    <rect x="0" y="0" width="680" height="460" fill="#ffffff"/>
+    <!-- Barras moradas -->
+    <rect x="0" y="0" width="680" height="12" fill="#a435f0"/>
+    <rect x="0" y="448" width="680" height="12" fill="#a435f0"/>
+    <rect x="10" y="22" width="660" height="416" rx="4" fill="none" stroke="#ede4fb" stroke-width="1.5"/>
+
+    <!-- Logo Udemy -->
+    <text x="340" y="80" text-anchor="middle" fill="#1c1d1f" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="800" letter-spacing="1">udemy</text>
+
+    <text x="340" y="130" text-anchor="middle" fill="#a435f0" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="3">CERTIFICADO DE FINALIZACIÓN</text>
+
+    <text x="340" y="176" text-anchor="middle" fill="#6b7280" font-family="Georgia, serif" font-size="13">Este certificado se otorga a</text>
+    <text x="340" y="216" text-anchor="middle" fill="#111827" font-family="Georgia, serif" font-size="26" font-weight="700">Aldemar José Hernández Hernández</text>
+    <line x1="180" y1="232" x2="500" y2="232" stroke="#ede4fb" stroke-width="1.5"/>
+
+    <text x="340" y="272" text-anchor="middle" fill="#6b7280" font-family="Georgia, serif" font-size="13">por completar exitosamente el curso</text>
+    <text x="340" y="316" text-anchor="middle" fill="#5a189a" font-family="Georgia, serif" font-size="27" font-weight="700">Diseño UX / UI</text>
+
+    <text x="340" y="360" text-anchor="middle" fill="#6b7280" font-family="Georgia, serif" font-size="13">Formación en línea · Udemy</text>
+
+    <line x1="270" y1="404" x2="410" y2="404" stroke="#d1d5db" stroke-width="1"/>
+    <text x="340" y="422" text-anchor="middle" fill="#9ca3af" font-family="Georgia, serif" font-size="12">Julio de 2024</text>
+  </g>
+</svg>
