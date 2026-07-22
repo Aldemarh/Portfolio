@@ -50,7 +50,7 @@ export function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="group flex flex-col rounded-2xl border border-slate-200 p-6 transition-all hover:border-brand-500/50 hover:shadow-xl dark:border-slate-800"
+              className="group flex flex-col rounded-2xl border border-slate-200/80 bg-white/70 p-6 shadow-sm ring-1 ring-slate-900/5 backdrop-blur-sm transition-all hover:-translate-y-1 hover:border-brand-500/40 hover:shadow-lg dark:border-white/10 dark:bg-slate-900/60 dark:ring-white/5"
             >
               <span className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-500/10 text-brand-500 transition-colors group-hover:bg-brand-500 group-hover:text-white">
                 <Icon size={24} />

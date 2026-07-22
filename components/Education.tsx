@@ -16,7 +16,7 @@ export function Education() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.5, delay: i * 0.1 }}
-            className="flex flex-col overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800"
+            className="flex flex-col overflow-hidden rounded-2xl border border-slate-200/80 bg-white/70 shadow-sm ring-1 ring-slate-900/5 backdrop-blur-sm transition-all hover:-translate-y-1 hover:border-brand-500/40 hover:shadow-lg dark:border-white/10 dark:bg-slate-900/60 dark:ring-white/5"
           >
             {item.image ? (
               <div className="border-b border-slate-200 bg-slate-50 p-3 dark:border-slate-800 dark:bg-slate-900/50">
