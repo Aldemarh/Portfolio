@@ -9,6 +9,8 @@ import {
   Phone,
   MapPin,
   Send,
+  CheckCircle2,
+  AlertCircle,
 } from "lucide-react";
 import { Section } from "./Section";
 import { site } from "@/lib/data";
@@ -34,22 +36,38 @@ const contactCards = [
   },
 ];
 
-export function Contact() {
-  const [sent, setSent] = useState(false);
+type Status = "idle" | "sending" | "success" | "error";
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+export function Contact() {
+  const [status, setStatus] = useState<Status>("idle");
+
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = e.currentTarget;
-    const data = new FormData(form);
-    const name = String(data.get("name") ?? "");
-    const email = String(data.get("email") ?? "");
-    const message = String(data.get("message") ?? "");
-    const subject = encodeURIComponent(`Contacto desde el portafolio — ${name}`);
-    const body = encodeURIComponent(
-      `Nombre: ${name}\nEmail: ${email}\n\n${message}`
+    const formData = new FormData(form);
+    formData.append("access_key", site.formAccessKey);
+    formData.append(
+      "subject",
+      `Nuevo mensaje del portafolio — ${formData.get("name")}`
     );
-    window.location.href = `mailto:${site.email}?subject=${subject}&body=${body}`;
-    setSent(true);
+    formData.append("from_name", "Portafolio Aldemar Hernández");
+
+    setStatus("sending");
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+      const data = await res.json();
+      if (data.success) {
+        setStatus("success");
+        form.reset();
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
   }
 
   return (
@@ -138,6 +156,15 @@ export function Contact() {
             onSubmit={handleSubmit}
             className="rounded-2xl border border-slate-200 p-6 sm:p-8 dark:border-slate-800"
           >
+            {/* Honeypot anti-spam (oculto) */}
+            <input
+              type="checkbox"
+              name="botcheck"
+              className="hidden"
+              style={{ display: "none" }}
+              tabIndex={-1}
+              autoComplete="off"
+            />
             <div className="grid gap-5 sm:grid-cols-2">
               <div>
                 <label htmlFor="name" className="mb-1.5 block text-sm font-medium">
@@ -183,14 +210,22 @@ export function Contact() {
 
             <button
               type="submit"
-              className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-brand-600 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-brand-600/20 transition-colors hover:bg-brand-700"
+              disabled={status === "sending"}
+              className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-brand-600 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-brand-600/20 transition-colors hover:bg-brand-700 disabled:cursor-not-allowed disabled:opacity-70"
             >
-              <Send size={16} /> Enviar mensaje
+              <Send size={16} />
+              {status === "sending" ? "Enviando..." : "Enviar mensaje"}
             </button>
 
-            {sent && (
-              <p className="mt-4 text-center text-sm text-emerald-600 dark:text-emerald-400">
-                ¡Gracias! Se abrió tu correo con el mensaje listo para enviar.
+            {status === "success" && (
+              <p className="mt-4 flex items-center justify-center gap-2 text-center text-sm text-emerald-600 dark:text-emerald-400">
+                <CheckCircle2 size={16} /> ¡Mensaje enviado! Te responderé pronto.
+              </p>
+            )}
+            {status === "error" && (
+              <p className="mt-4 flex items-center justify-center gap-2 text-center text-sm text-red-500">
+                <AlertCircle size={16} /> Ocurrió un error. Intenta de nuevo o
+                escríbeme directo a {site.email}.
               </p>
             )}
           </form>

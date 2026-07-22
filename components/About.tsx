@@ -7,7 +7,7 @@ import { about } from "@/lib/data";
 export function About() {
   return (
     <Section id="sobre-mi" eyebrow="Perfil" title="Sobre mí">
-      <div className="grid gap-10 md:grid-cols-3">
+      <div className="grid items-start gap-10 md:grid-cols-3">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -27,7 +27,7 @@ export function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="grid grid-cols-3 gap-4 md:grid-cols-1"
+          className="grid grid-cols-2 gap-4 self-start"
         >
           {about.highlights.map((h) => (
             <div

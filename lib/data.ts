@@ -14,6 +14,9 @@ export const site = {
   phone: "+57 314 727 9982",
   photo: "/aldemar.jpg", // tu foto de perfil (en /public)
   resumeUrl: "/cv.pdf", // coloca tu PDF en /public/cv.pdf
+  // 👇 Access key de Web3Forms (gratis en https://web3forms.com — te llega por correo).
+  //    Pégala aquí y el formulario de contacto enviará los mensajes a tu email.
+  formAccessKey: "bebfe209-13ed-4562-94e5-a3cc3083aad6",
   socials: {
     github: "https://github.com/Aldemarh",
     linkedin: "https://www.linkedin.com/in/aldemar-hernandez-hdez/",
@@ -22,10 +25,8 @@ export const site = {
 
 export const about = {
   paragraphs: [
-    "Soy Ingeniero de Sistemas con un perfil versátil: desarrollo web, diseño de experiencia de usuario (UX/UI) y aseguramiento de la calidad de software (QA). Me apasiona convertir requerimientos complejos en interfaces claras, intuitivas y en productos confiables.",
-    "Como desarrollador web construyo interfaces con HTML, CSS, JavaScript y Python, resuelvo tickets y corrijo bugs; y desde el rol de QA aseguro que cada entrega sea estable y esté alineada con las necesidades del negocio.",
-    "Soy una persona proactiva, organizada y responsable, con excelentes relaciones interpersonales. Me destaco por el trabajo en equipo, la rápida toma de decisiones y el buen manejo de la presión.",
-    "Actualmente trabajo como freelancer en proyectos de desarrollo web, UX y QA, buscando siempre retos desafiantes donde continuar aprendiendo y creciendo profesionalmente.",
+    "Ingeniero de Sistemas con un perfil versátil: desarrollo web, diseño UX/UI y aseguramiento de calidad (QA). Convierto requerimientos complejos en interfaces claras y productos confiables.",
+    "Proactivo, organizado y con buen trabajo en equipo. Actualmente como freelancer en proyectos de desarrollo web, UX y QA, buscando siempre nuevos retos donde crecer.",
   ],
   highlights: [
     { value: "3+", label: "Años de experiencia" },
